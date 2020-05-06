@@ -18,7 +18,8 @@ install:
     - sudo make
     - sudo make install
     - cd ~
-    - sudo apt-get install libboost-all-dev
+    - sudo apt install devscripts
+    - sudo rmadison libboost1.55-dev
     - sudo apt-get install valgrind
     - sudo apt-get install libgtest-dev
     - cd /usr/src/gtest
