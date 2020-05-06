@@ -9,7 +9,7 @@ install:
     - cd /usr/bin
     - sudo rm g++ 
     - sudo ln -s g++-4.9 g++
-    - sudo curl -# -O https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz
+    - sudo curl -# -O https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
     - sudo gunzip protobuf-2.5.0.tar.gz 
     - sudo tar -xvf protobuf-2.5.0.tar
     - cd protobuf-2.5.0
