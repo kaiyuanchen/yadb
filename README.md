@@ -1,4 +1,11 @@
-#yadb [![Build Status](https://magnum.travis-ci.com/nexcc/yadb.svg?token=J21n6F5CjmJQMpg68x1y&branch=master)](https://magnum.travis-ci.com/nexcc/yadb)
+# yadb, a RAFT-based distributed nosql database
+	•	50000 writes per second
+	•	RAFT consensus algorithm for managing a replicated log
+	•	Provide simple query languages, e.g. INSERT {“key”:”123”, “val”:”str1”}
+	•	Build an integration and unit test
+
+lib required:
 g++ 4.9  
-boost 1.55  
+c++ boost 1.55  
 protobuf 2.5  
+
