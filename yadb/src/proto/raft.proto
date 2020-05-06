@@ -1,0 +1,43 @@
+package raft_proto;  
+
+message vote_request{
+	required int32 term = 1;
+	required int32 candidate_id = 2; 
+	required int32 last_log_idx =3;
+}
+
+message vote_response{
+	enum RESULT_TYPE {
+		OK = 0;
+		REJECT= 1;
+	}
+	required int32 term = 1;
+	required RESULT_TYPE result = 2 [default = REJECT];
+  
+}
+
+message append_entry_requset{
+	message entry{
+		required int32 idx =1;
+		required string val= 2;
+	}
+
+	required int32 term = 1;
+	required int32 leader_id = 2;
+	optional int32 prev_log_idx = 3;
+	optional int32 prev_log_term = 4;
+	optional int32 leader_cmt_idx= 5;
+	repeated entry etriies = 6;
+}
+
+message append_entry_response{
+	enum RESULT_TYPE {
+		OK = 0;
+		REJECT= 1;
+    }
+
+	required int32 term = 1;
+    required RESULT_TYPE result = 2 [default = REJECT];
+	optional int32 prev_log_idx = 3;
+	optional int32 append_size = 4 [default = 0];
+}

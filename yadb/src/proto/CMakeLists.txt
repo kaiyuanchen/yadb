@@ -1,0 +1,6 @@
+execute_process(
+	COMMAND make 
+	WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
+FILE(GLOB _ALL_FILES ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
+add_library(proto_lib ${_ALL_FILES})

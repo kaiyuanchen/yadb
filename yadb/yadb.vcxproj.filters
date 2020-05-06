@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="測試">
+      <UniqueIdentifier>{8cec5d41-b410-46ee-bda3-876b40723dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\index">
+      <UniqueIdentifier>{079ddc93-3889-41fd-b7a5-bb4c35104688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\storage">
+      <UniqueIdentifier>{a6619d5c-7c16-4402-8f74-4dd06521d94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\parser">
+      <UniqueIdentifier>{ee32236f-7c91-43de-8058-b83b9a11a039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\serv">
+      <UniqueIdentifier>{d75ee07e-8f2a-43e6-b7a2-be5b395273da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\proto">
+      <UniqueIdentifier>{13702c4b-a172-4ede-82ba-93ce98c2539b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\thread">
+      <UniqueIdentifier>{0ab943de-3422-4d01-8240-5bbae13804fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="資源檔\標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\journal">
+      <UniqueIdentifier>{5aa7df5e-4e68-4b98-870d-6917efc8567c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\storage_test.cpp">
+      <Filter>測試</Filter>
+    </ClCompile>
+    <ClCompile Include="test\thread_test.cpp">
+      <Filter>測試</Filter>
+    </ClCompile>
+    <ClCompile Include="test\journal_test.cpp">
+      <Filter>測試</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index\bpt_node.cpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index\bpt_index.cpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClCompile>
+    <ClCompile Include="src\storage\storage.cpp">
+      <Filter>原始程式檔\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index\bpt_fs.cpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serv\serv_raft.cpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serv\fde.cpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serv\serv.cpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClCompile>
+    <ClCompile Include="test\serv_raft_test.cpp">
+      <Filter>測試</Filter>
+    </ClCompile>
+    <ClCompile Include="test\serv_test.cpp">
+      <Filter>測試</Filter>
+    </ClCompile>
+    <ClCompile Include="src\serv\state_raft.cpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\journal\journal_raft.cpp">
+      <Filter>原始程式檔\journal</Filter>
+    </ClCompile>
+    <ClCompile Include="src\yadb.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\thread_pool.cpp">
+      <Filter>原始程式檔\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\yadb-cli.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test\CMakeLists.txt">
+      <Filter>測試</Filter>
+    </Text>
+    <Text Include="src\index\CMakeLists.txt">
+      <Filter>原始程式檔\index</Filter>
+    </Text>
+    <Text Include="src\CMakeLists.txt">
+      <Filter>原始程式檔</Filter>
+    </Text>
+    <Text Include="src\parser\CMakeLists.txt">
+      <Filter>原始程式檔\parser</Filter>
+    </Text>
+    <Text Include="src\storage\CMakeLists.txt">
+      <Filter>原始程式檔\storage</Filter>
+    </Text>
+    <Text Include="src\serv\CMakeLists.txt">
+      <Filter>原始程式檔\serv</Filter>
+    </Text>
+    <Text Include="src\proto\CMakeLists.txt">
+      <Filter>原始程式檔\proto</Filter>
+    </Text>
+    <Text Include="src\journal\CMakeLists.txt">
+      <Filter>原始程式檔\journal</Filter>
+    </Text>
+    <Text Include="src\thread\CMakeLists.txt">
+      <Filter>原始程式檔\thread</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\index\bpt_node.hpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClInclude>
+    <ClInclude Include="src\index\bpt_index.hpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClInclude>
+    <ClInclude Include="src\storage\storage.hpp">
+      <Filter>原始程式檔\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\index\bpt_fs.hpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClInclude>
+    <ClInclude Include="src\yadb.hpp">
+      <Filter>原始程式檔</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parser\query.hpp">
+      <Filter>原始程式檔\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\serv\serv_raft.hpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\serv\fde.hpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\serv\state.hpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\serv\serv.hpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\serv\state_raft.hpp">
+      <Filter>原始程式檔\serv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\journal\journal_raft.hpp">
+      <Filter>原始程式檔\journal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\thread_safe_map.hpp">
+      <Filter>原始程式檔\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\thread_safe_queue.hpp">
+      <Filter>原始程式檔\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\thread_pool.hpp">
+      <Filter>原始程式檔\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="src\index\bpt_nodebase.hpp">
+      <Filter>原始程式檔\index</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\parser\yaql.l">
+      <Filter>原始程式檔\parser</Filter>
+    </None>
+    <None Include="src\parser\yaql.y">
+      <Filter>原始程式檔\parser</Filter>
+    </None>
+    <None Include="src\proto\raft.proto">
+      <Filter>原始程式檔\proto</Filter>
+    </None>
+    <None Include="src\proto\Makefile">
+      <Filter>原始程式檔\proto</Filter>
+    </None>
+  </ItemGroup>
+</Project>
