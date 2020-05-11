@@ -4,8 +4,14 @@
 	•	Provide simple query languages, e.g. INSERT {“key”:”123”, “val”:”str1”}
 	•	Build an integration and unit test
 
-lib required:
-g++ 4.9  
+# lib required:  
+```g++ 4.9  
 c++ boost 1.55  
 protobuf 2.5  
+```
 
+# install
+```
+mkdir builds && cd builds
+cmake -Dtest=ON ..
+```
