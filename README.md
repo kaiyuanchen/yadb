@@ -2,7 +2,6 @@
 	•	50000 writes per second
 	•	RAFT consensus algorithm for managing a replicated log
 	•	Provide simple query languages, e.g. INSERT {“key”:”123”, “val”:”str1”}
-	•	Build an integration and unit test
 
 # lib required:  
 ```g++ 4.9  
